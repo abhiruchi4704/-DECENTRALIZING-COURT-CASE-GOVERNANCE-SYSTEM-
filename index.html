@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <title>Getting Started</title>
+</head>
+
+<body>
+    <!-- create header with connect button -->
+    <header class="SiteHeader">
+        <div class="HeaderContainer">
+            <h1 id="pageTitle">Police Authority portal</h1>
+        </div>
+        <div class="HeaderContainer">
+            <button id="walletBtn"></button>
+        </div>
+
+    </header>
+    <div class="MainCont">
+        <div class="DataBlocks">
+            <div class="DataBlock">
+                <div id="basicProfile">
+                    <div class="BodyContainer">
+                        <h2>Database view</h2>
+                        <p>Fetching data from ceramic Network</p>
+                        <br>
+                        <p class="ProfileData" id="profileName"></p>
+                        <p class="ProfileData" id="profileGender"></p>
+                        <p class="ProfileData" id="profileCountry"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ProfileForm">
+            <div class="BodyContainer">
+                <h2>Update case report xyz</h2>
+                <br>
+                <form id="profileForm">
+                    <div class="formfield">
+                        <label class="formLabel" for="name">Name of the Police authority:</label>
+                        <input class="forminput" type="text" id="name">
+                    </div>
+                    <div class="formfield">
+                        <label class="formLabel" for="country">Authority ID number:</label>
+                        <input class="forminput" type="text" id="country">
+                    </div>
+                    <div class="formfield">
+                        <label class="formLabel" for="gender">Add Description for case</label>
+                        <textarea rows="4" cols="50" name="comment" form="usrform" class="forminput" type="text" id="gender">Enter the description here...</textarea>
+
+                           
+                        </input>
+                    </div>
+                    <div class="formfield">
+                        <input class="forminput" type="submit" id="submitBtn" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- <button id="setBasicProf">Set Profile</button>
+    <button id="getBasicProf">Get Profile</button> -->
+    <script src="dist/bundle.js" type="module"></script>
+</body>
+
+</html>
